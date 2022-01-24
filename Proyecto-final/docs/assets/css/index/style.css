@@ -1,0 +1,129 @@
+/* @IMPORTS y otros*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --title:"Libre Franklin", sans-serif;
+    --text: 'Montserrat', sans-serif;
+}
+
+/* ~~~~~~~~~~~~ HTML+BODY TAGS ~~~~~~~~~~~~ */
+
+html, body {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    width: auto;
+    
+}
+
+/* ~~~~~~~~~~~~ HEADER + Titulo ~~~~~~~~~~~~ */
+
+
+header {
+    width: 100%;
+    height: 50vh;
+
+    /* background: rgb(255,255,255);
+    background: linear-gradient(153deg, rgba(255,255,255,1) 59%, rgba(33,140,157,1) 83%); */
+
+}
+
+h1 {
+    margin-left: 3vw;
+    color: #dca25b;
+    font-family: var(--title);
+    font-size: 5vw;
+}
+
+
+h1::after {
+    
+    content: "Proyecto final";
+    font-size: 3.5vw;
+    color:#218c9d;
+
+}
+
+/* ~~~~~~~~ SECTIONS Y CONTAINERS ~~~~~~~~~~~ */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.mainContainer {
+    width: 95%;
+    height: 80vh;
+    margin: 5vh 0;
+
+    display: flex;
+    flex-direction: row;
+
+
+    /* border:solid black 1px; */
+}
+
+/* +++++++ subContainer Text +++++++++++ */
+
+.subContainer-text {
+    width: 40%;
+    padding: 0 1vw;
+    
+    /* background-color: rgb(243, 243, 172); */
+    font-family: var(--text);
+    font-size: 1.5vw;
+}
+
+.subContainer-text h2 {
+    font-family: var(--title);
+}
+
+
+/* +++++++ subContainer Content +++++++++++ */
+
+.subContainer-content {
+    width: 60%;
+    /* background-color: rgb(172, 243, 199); */
+}
+
+/* ~~~~~~~~~~ Footer ~~~~~~~~~~ */
+footer {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+footer button {
+    height: 20%;
+    width: 50%;
+    align-self: center;
+
+    font-family: var(--text);
+    font-size: 1.2vw;
+    border: 1px #dca25b solid;
+
+    transition: background-color 1s,color 2s, border 1s;
+}
+
+footer button:hover {
+    cursor: pointer;
+    background-color: #dca25b;
+    color: #ffffff;
+    transition: background-color 2s;
+    border: 1px black solid;
+
+}
+
+footer p {
+    align-self: center;
+    font-family: var(--text);
+    font-size: 1vw;
+}

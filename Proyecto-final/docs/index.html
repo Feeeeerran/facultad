@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/index/style.css">
+    <link rel="stylesheet" href="assets/css/index/picker.css">
+    <link rel="stylesheet" href="assets/css/index/objetivo.css">
+    <link rel="stylesheet" href="assets/css/index/database.css">
+    <link rel="stylesheet" href="assets/css/index/proceso.css">
+    
+    <title>Trabajo final</title>
+
+</head>
+<body>
+    <header>
+        <h1>Inteligencia Artificial 1 <br></h1>
+    </header>
+    <main>
+        <section class="mainContainer pickerContainer">
+            <div class="subContainer-text">
+                <h2>Imágenes en Javascript</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit obcaecati maxime, ipsam deleniti veritatis officiis tenetur, laborum tempore illo optio sunt iste unde cum rem enim omnis architecto molestias.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magnam deleniti iusto voluptates incidunt. Deleniti, et? Totam possimus blanditiis sit dolor, laboriosam nam ipsa, repellendus iusto eos quo quasi illo?</p>
+            </div>
+            <div class="subContainer-content picker">
+                <canvas id="picker-img"></canvas>
+                <div class="picker-subContainer">
+                    <canvas id="picker"></canvas>
+                    <canvas id="picker-select"></canvas>
+                </div>
+            </div>
+        </section>
+        <section class="mainContainer objetivoContainer">
+            <div class="subContainer-text">
+                <h2>Objetivo del proyecto (añadir filtros a usar para mejorar la diferencia)</h2>
+                <p>Transformar a binario y de ahi sacar los datos</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magnam deleniti iusto voluptates incidunt. Deleniti, et? Totam possimus blanditiis sit dolor, laboriosam nam ipsa, repellendus iusto eos quo quasi illo?</p>
+            </div>
+            <div class="subContainer-content objetivo">
+                <img src="assets/img/db/tornillo2.jfif" alt="muestra">
+                <canvas id="objetivoBinarizado1"></canvas>
+                <canvas id="objetivoBinarizado2"></canvas>
+                <canvas id="objetivoBinarizado3"></canvas>
+            </div>
+        </section>
+        <section class="mainContainer databaseContainer">
+            <div class="subContainer-text">
+                <h2>La base de datos inicial</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit obcaecati maxime, ipsam deleniti veritatis officiis tenetur, laborum tempore illo optio sunt iste unde cum rem enim omnis architecto molestias.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magnam deleniti iusto voluptates incidunt. Deleniti, et? Totam possimus blanditiis sit dolor, laboriosam nam ipsa, repellendus iusto eos quo quasi illo?</p>
+            </div>
+            <div class="subContainer-content database">
+                <!-- Tornillos -->
+                <img src="assets/img/db/tornillo1.jfif" alt="database">
+                <img src="assets/img/db/tornillo2.jfif" alt="database">
+                <img src="assets/img/db/tornillo3.jfif" alt="database">
+                <!-- Clavos -->
+                <img src="assets/img/db/clavo1.jfif" alt="database">
+                <img src="assets/img/db/clavo2.jfif" alt="database">
+                <img src="assets/img/db/clavo3.jfif" alt="database">
+                <!-- Arandelas -->
+                <img src="assets/img/db/arandela1.jfif" alt="database">
+                <img src="assets/img/db/arandela2.jfif" alt="database">
+                <img src="assets/img/db/arandela3.jfif" alt="database">
+                <!-- Tuercas -->
+                <img src="assets/img/db/tuerca1.jfif" alt="database">
+                <img src="assets/img/db/tuerca2.jfif" alt="database">
+                <img src="assets/img/db/tuerca3.jfif" alt="database">
+            </div>
+        </section>
+        <section class="procesoContainer">
+            <div class="proceso-text">
+                <h2>Obtencion de datos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores corporis, libero assumenda minima delectus minus, mollitia possimus dolores eos harum dolorum officia laboriosam vel aperiam nobis. Soluta, alias. Nam, incidunt.</p>
+            </div>
+            <div class="proceso-binarizados">
+                <canvas id="db1"></canvas>
+                <canvas id="db2"></canvas>
+                <canvas id="db3"></canvas>
+                <canvas id="db4"></canvas>
+                <canvas id="db5"></canvas>
+                <canvas id="db6"></canvas>
+                <canvas id="db7"></canvas>
+                <canvas id="db8"></canvas>
+                <canvas id="db9"></canvas>
+                <canvas id="db10"></canvas>
+                <canvas id="db11"></canvas>
+                <canvas id="db12"></canvas>
+            </div>
+            <div class="proceso-chart">
+                <canvas id="procesoChart"></canvas>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <button>Subir una foto propia</button>
+        <p>Desarrollado por @Ferran Martinez | 2021</p>
+    </footer>
+    
+    <!-- Como ya tenia estilado el boton, no tenia ganas de meter una etiqueta a xd -->
+    <script>
+        let buttonMain = document.querySelector("button");
+        buttonMain.addEventListener("click",()=> {
+            window.location.href = "clasificacion.html"
+        })
+    </script>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/js/main.js"></script>
+
+<!-- Filtros -->
+<script src="assets/js/filtros.js"></script>
+
+
+<!-- Para el color picker -->
+<script src="assets/js/picker.js"></script>
+
+<!-- Objetivo donde se muestran los filtros -->
+<script src="assets/js/objetivo.js"></script>
+
+<!-- Funciones para calcular el momento -->
+<script src="assets/js/momento.js"></script>
+
+
+<!-- Para mostrar el proceso -->
+<script src="assets/js/proceso/proceso.js"></script>
+<script src="assets/js/proceso/proceso-chart.js"></script>
+
+</html>

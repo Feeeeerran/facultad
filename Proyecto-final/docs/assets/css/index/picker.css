@@ -1,0 +1,39 @@
+/* COLOR PICKER */
+
+.pickerContainer .subContainer-text {
+    width:50% !important;
+}
+
+.pickerContainer .subContainer-content {
+    width:50% !important;
+}
+
+.picker {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .picker canvas {
+    /* border: black solid 2px;
+} */
+
+
+
+#picker-img {
+    height: 80%;
+    margin:5%;
+
+}
+
+.picker-subContainer {
+    margin: 0 5%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.picker-subContainer canvas {
+    width: 45%;
+    height: 60%;
+}

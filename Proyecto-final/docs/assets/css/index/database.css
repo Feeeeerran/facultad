@@ -1,0 +1,10 @@
+.databaseContainer{
+    height: 100vh !important;
+}
+
+.database {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    justify-items: center;
+}

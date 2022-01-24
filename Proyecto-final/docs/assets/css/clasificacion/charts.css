@@ -1,0 +1,46 @@
+section.charts {
+    width: 100%;
+    /* height: 150vh; */
+    margin-top: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.kMeans {
+    width: 70%;
+}
+
+.knn {
+    width: 70%;
+}
+
+
+.chart-subSection {
+    /* width: 48%; */
+    margin:20vh 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-subSection h2 {
+    /* align-self: flex-start; */
+    font-family: var(--text);
+    font-size: 3vw;
+}
+
+.chart-subSection canvas {
+    /* width: 90% !important; */
+    height: 60%;
+
+    /* border: solid black 2px; */
+}
+
+.chart-subSection p {
+    font-family: var(--text);
+    font-size: 1.5vw;
+}

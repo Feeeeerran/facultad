@@ -1,0 +1,31 @@
+.objetivoContainer {
+    flex-direction:row-reverse !important;
+}
+
+.objetivo {
+    padding:5vh 0 ;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+
+
+.objetivo * {
+    /* margin:0 10%; */
+    width: 35%;
+    height: 40%;
+
+    border: solid black 2px;
+}
+
+/* .objetivo canvas {
+    width: 30%;
+    height: 40%;
+
+    border: solid black 2px;
+} */

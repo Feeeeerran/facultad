@@ -1,0 +1,37 @@
+section.procesoContainer {
+    height: 230vh;
+    padding:0 2vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.proceso-text {
+    font-family: var(--text);
+    font-size: 1.5vw;
+}
+
+
+.proceso-binarizados {
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2vh;
+
+    justify-items: center;
+}
+
+.proceso-binarizados * {
+    /* Anchos y altos fijos para obtener resultados fijos */
+    width: 400px;
+    height: 250px;
+    border:solid black 2px;
+}
+
+/* Chart de la base de datos */
+.proceso-chart {
+    /* margin-top: 5vh; */
+    width: 80%;
+    align-self: center;
+}

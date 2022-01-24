@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+canvas {
+    border: black 2px solid;
+}
+
+header {
+    margin-left: 3vw;
+}
+
+header p {
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+main img {
+    width: 550px;
+    height: 350px;
+    margin-top: 20px;
+}

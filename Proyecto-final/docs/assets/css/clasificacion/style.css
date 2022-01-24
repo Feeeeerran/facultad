@@ -1,0 +1,61 @@
+/* @IMPORTS y otros*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --title:"Libre Franklin", sans-serif;
+    --text: 'Montserrat', sans-serif;
+}
+
+/* ~~~~~~~~~ GENERAL ~~~~~~~~~ */
+
+html, body {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    width: auto;
+    /* CAMBIAR A 100 */
+    /* height: 150vh; */
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */    
+}
+
+/* ~~~~~~~~~ HEADER ~~~~~~~~~ */
+header {
+    width: 100%;
+    height: 35vh;
+
+    /* background: rgb(255,255,255);
+    background: linear-gradient(153deg, rgba(255,255,255,1) 59%, rgba(33,140,157,1) 83%); */
+
+}
+
+h1 {
+    margin-left: 3vw;
+    color: #dca25b;
+    font-family: var(--title);
+    font-size: 5vw;
+}
+
+
+h1::after {
+    
+    content: "K-means y Knn";
+    font-size: 3.5vw;
+    color:#218c9d;
+
+}
+
+/* ~~~~~~~~~~ MAIN ~~~~~~~~~~~ */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

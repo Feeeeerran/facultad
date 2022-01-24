@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final - clasificaciones</title>
+
+    <link rel="stylesheet" href="assets/css/clasificacion/style.css">
+    <link rel="stylesheet" href="assets/css/clasificacion/up-foto.css">
+    <link rel="stylesheet" href="assets/css/clasificacion/charts.css">
+</head>
+<body>
+    <header>
+        <h1>Algoritmos <br></h1>
+    </header>
+    <main>
+        <section class="upFoto">
+            <div class="upFoto-file">
+                <h2>Sube tu foto para clasificarla</h2>
+                <img id="preVisual">
+                <label for="load">
+                    <p>Click para subir una foto</p>
+                    <input type="file" id="load">
+                </label>
+            </div>
+            <div class="upFoto-canvas">
+                <canvas id="upFoto-canvas"></canvas>
+            </div>
+        </section>
+        <section class="charts">
+            <div class="kMeans chart-subSection">
+                <h2>Resultado de K-means</h2>
+                <canvas id="kMeansChart"></canvas>
+                <p></p>
+            </div>
+            <div class="knn chart-subSection">
+                <h2>Resultado de Knn</h2>
+                <canvas id="knnChart"></canvas>
+                <p></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por @Ferran Martinez | 2021</p>
+    </footer>
+
+
+    
+</body>
+<!-- Libreria Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/js/main.js"></script>
+
+
+
+
+<!-- Filtros -->
+<script src="assets/js/filtros.js"></script>
+<!-- Funcion para calcular el momento -->
+<script src="assets/js/momento.js"></script>
+
+<!-- K-means -->
+<script src="assets/js/k-means/k-means.js"></script>
+<script src="assets/js/k-means/k-means-chart.js"></script>
+<!-- Knn -->
+<script src="assets/js/knn/knn.js"></script>
+<script src="assets/js/knn/knn-chart.js"></script>
+
+<!-- Para cargar la imagen -->
+<script src="assets/js/up-file.js"></script>
+</html>

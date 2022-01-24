@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+canvas {
+    border: black 2px solid;
+}
+
+header {
+    margin-left: 3vw;
+}
+
+header p {
+    position: relative;
+}
+
+header div {
+    margin-top: 10vh;
+}
+
+header div p:nth-child(1)::before {
+    content: " ";
+    width:20px;
+    height:20px;
+    background-color: rgb(221, 255, 0);
+    position: absolute;
+    left:-25px;
+    border: black 1px solid;;
+}
+
+header div p:nth-child(2)::before {
+    content: " ";
+    width:20px;
+    height:20px;
+    background-color: rgb(255, 72, 72);
+    position: absolute;
+    left:-25px;
+    border: black 1px solid;;
+}
+
+header div p:nth-child(3)::before {
+    content: " ";
+    width:20px;
+    height:20px;
+    background-color: rgb(40, 255, 191);
+    position: absolute;
+    left:-25px;
+    border: black 1px solid;;
+}
